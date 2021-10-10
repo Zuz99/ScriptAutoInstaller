@@ -20,7 +20,7 @@ commonname=www.mdxstores.com
 email=admin@mdxstores.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/kmardhex/scku/main/password"
+wget -O /etc/pam.d/common-password "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -43,13 +43,13 @@ WantedBy=multi-user.target
 END
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/edu-proxy "https://raw.githubusercontent.com/kmardhex/scku/main/edu.py"
+wget -q -O /usr/local/bin/edu-proxy "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/edu.py"
 chmod +x /usr/local/bin/edu-proxy
 
 # Installing Service
 cat > /etc/systemd/system/edu-proxy.service << END
 [Unit]
-Description=Python Edu Proxy By Mardhex
+Description=Python Edu Proxy By MrPinguiiin
 Documentation=https://mdxstores.com
 After=network.target nss-lookup.target
 
@@ -122,14 +122,14 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/kmardhex/scku/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/kmardhex/scku/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/kmardhex/scku/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -159,7 +159,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/kmardhex/scku/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -213,7 +213,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://raw.githubusercontent.com/kmardhex/scku/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://github.com/MrPinguiiin/ScriptAutoInstaller/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -246,7 +246,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/kmardhex/scku/main/bannerssh.conf"
+wget -O /etc/issue.net "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
@@ -269,52 +269,52 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/kmardhex/scku/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/kmardhex/scku/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/kmardhex/scku/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/kmardhex/scku/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/kmardhex/scku/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/kmardhex/scku/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/kmardhex/scku/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/kmardhex/scku/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/kmardhex/scku/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/kmardhex/scku/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/kmardhex/scku/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/kmardhex/scku/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/kmardhex/scku/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/kmardhex/scku/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/kmardhex/scku/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/kmardhex/scku/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/kmardhex/scku/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/kmardhex/scku/main/clear-log.sh"
-wget -O change-port "https://raw.githubusercontent.com/kmardhex/scku/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/kmardhex/scku/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/kmardhex/scku/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/kmardhex/scku/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/kmardhex/scku/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/kmardhex/scku/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/kmardhex/scku/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/kmardhex/scku/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/kmardhex/scku/main/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/kmardhex/scku/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/kmardhex/scku/main/xp.sh"
-wget -O kernel-updt "https://raw.githubusercontent.com/kmardhex/scku/main/kernel-update.sh"
-wget -O tessh "https://raw.githubusercontent.com/kmardhex/scku/main/tessh.sh"
-wget -O ssstp "https://raw.githubusercontent.com/kmardhex/scku/main/ssstp.sh"
-wget -O sssr "https://raw.githubusercontent.com/kmardhex/scku/main/sssr.sh"
-wget -O ltp "https://raw.githubusercontent.com/kmardhex/scku/main/ltp.sh"
-wget -O wgg "https://raw.githubusercontent.com/kmardhex/scku/main/wgg.sh"
-wget -O trj "https://raw.githubusercontent.com/kmardhex/scku/main/trj.sh"
-wget -O wss "https://raw.githubusercontent.com/kmardhex/scku/main/wss.sh"
-wget -O vls "https://raw.githubusercontent.com/kmardhex/scku/main/vls.sh"
-wget -O updatee "https://raw.githubusercontent.com/kmardhex/scku/main/updatee.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/kmardhex/scku/main/auto-reboot.sh"
-wget -O tr-mnt "https://raw.githubusercontent.com/kmardhex/scku/main/tr-mnt.sh"
-wget -O bbr "https://raw.githubusercontent.com/kmardhex/scku/main/bbr.sh"
-wget -O running "https://raw.githubusercontent.com/kmardhex/scku/main/running.sh"
-wget -O cff "https://raw.githubusercontent.com/kmardhex/scku/main/cff.sh"
-wget -O cfh "https://raw.githubusercontent.com/kmardhex/scku/main/cfh.sh"
-wget -O cfd "https://raw.githubusercontent.com/kmardhex/scku/main/cfd.sh"
+wget -O add-host "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-host.sh"
+wget -O about "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/about.sh"
+wget -O menu "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/menu.sh"
+wget -O usernew "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/usernew.sh"
+wget -O trial "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/trial.sh"
+wget -O hapus "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/hapus.sh"
+wget -O member "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/member.sh"
+wget -O delete "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/delete.sh"
+wget -O cek "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek.sh"
+wget -O restart "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/restart.sh"
+wget -O speedtest "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/speedtest_cli.py"
+wget -O info "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/info.sh"
+wget -O ram "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ram.sh"
+wget -O renew "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew.sh"
+wget -O autokill "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/autokill.sh"
+wget -O ceklim "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ceklim.sh"
+wget -O tendang "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/tendang.sh"
+wget -O clear-log "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/clear-log.sh"
+wget -O change-port "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/change.sh"
+wget -O port-ovpn "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-ovpn.sh"
+wget -O port-ssl "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-ssl.sh"
+wget -O port-wg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-wg.sh"
+wget -O port-tr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-tr.sh"
+wget -O port-sstp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-sstp.sh"
+wget -O port-squid "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-squid.sh"
+wget -O port-ws "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-ws.sh"
+wget -O port-vless "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/port-vless.sh"
+wget -O wbmn "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/webmin.sh"
+wget -O xp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/xp.sh"
+wget -O kernel-updt "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/kernel-update.sh"
+wget -O tessh "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/tessh.sh"
+wget -O ssstp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ssstp.sh"
+wget -O sssr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/sssr.sh"
+wget -O ltp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ltp.sh"
+wget -O wgg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/wgg.sh"
+wget -O trj "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/trj.sh"
+wget -O wss "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/wss.sh"
+wget -O vls "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/vls.sh"
+wget -O updatee "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/updatee.sh"
+wget -O auto-reboot "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/auto-reboot.sh"
+wget -O tr-mnt "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/tr-mnt.sh"
+wget -O bbr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/bbr.sh"
+wget -O running "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/running.sh"
+wget -O cff "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cff.sh"
+wget -O cfh "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cfh.sh"
+wget -O cfd "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cfd.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
