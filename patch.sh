@@ -15,64 +15,64 @@ echo "Start Patch"
 echo "Fix Curl IP Address"
 cd /usr/bin
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/kmardhex/scku/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/kmardhex/scku/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/kmardhex/scku/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/kmardhex/scku/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/kmardhex/scku/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/kmardhex/scku/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/kmardhex/scku/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/kmardhex/scku/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/kmardhex/scku/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/kmardhex/scku/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/kmardhex/scku/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/kmardhex/scku/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/kmardhex/scku/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/kmardhex/scku/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/kmardhex/scku/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/kmardhex/scku/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/kmardhex/scku/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/kmardhex/scku/main/clear-log.sh"
-wget -O add-ws "https://raw.githubusercontent.com/kmardhex/scku/main/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/kmardhex/scku/main/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/kmardhex/scku/main/add-tr.sh"
-wget -O del-ws "https://raw.githubusercontent.com/kmardhex/scku/main/del-ws.sh"
-wget -O del-vless "https://raw.githubusercontent.com/kmardhex/scku/main/del-vless.sh"
-wget -O del-tr "https://raw.githubusercontent.com/kmardhex/scku/main/del-tr.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/kmardhex/scku/main/cek-ws.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/kmardhex/scku/main/cek-vless.sh"
-wget -O cek-tr "https://raw.githubusercontent.com/kmardhex/scku/main/cek-tr.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/kmardhex/scku/main/renew-ws.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/kmardhex/scku/main/renew-vless.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/kmardhex/scku/main/renew-tr.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/kmardhex/scku/main/cert.sh"
-wget -O autobackup "https://raw.githubusercontent.com/kmardhex/scku/main/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/kmardhex/scku/main/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/kmardhex/scku/main/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/kmardhex/scku/main/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/kmardhex/scku/main/strt.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/kmardhex/scku/main/limit-speed.sh"
-wget -O add-ss "https://raw.githubusercontent.com/kmardhex/scku/main/add-ss.sh"
-wget -O del-ss "https://raw.githubusercontent.com/kmardhex/scku/main/del-ss.sh"
-wget -O cek-ss "https://raw.githubusercontent.com/kmardhex/scku/main/cek-ss.sh"
-wget -O renew-ss "https://raw.githubusercontent.com/kmardhex/scku/main/renew-ss.sh"
-wget -O add-wg "https://raw.githubusercontent.com/kmardhex/scku/main/add-wg.sh"
-wget -O del-wg "https://raw.githubusercontent.com/kmardhex/scku/main/del-wg.sh"
-wget -O cek-wg "https://raw.githubusercontent.com/kmardhex/scku/main/cek-wg.sh"
-wget -O renew-wg "https://raw.githubusercontent.com/kmardhex/scku/main/renew-wg.sh"
-wget -O del-non "https://raw.githubusercontent.com/kmardhex/scku/main/del-non.sh"
-wget -O xp "https://raw.githubusercontent.com/kmardhex/scku/main/xp.sh"
-wget -O wss "https://raw.githubusercontent.com/kmardhex/scku/main/wss.sh"
-wget -O renew-non "https://raw.githubusercontent.com/kmardhex/scku/main/renew-non.sh"
-wget -O add-wstls "https://raw.githubusercontent.com/kmardhex/scku/main/add-wstls.sh"
-wget -O wgg "https://raw.githubusercontent.com/kmardhex/scku/main/wgg.sh"
-wget -O vls "https://raw.githubusercontent.com/kmardhex/scku/main/vls.sh"
-wget -O trj "https://raw.githubusercontent.com/kmardhex/scku/main/trj.sh"
-wget -O tessh "https://raw.githubusercontent.com/kmardhex/scku/main/tessh.sh"
-wget -O ssstp "https://raw.githubusercontent.com/kmardhex/scku/main/ssstp.sh"
-wget -O sssr "https://raw.githubusercontent.com/kmardhex/scku/main/sssr.sh"
-wget -O ltp "https://raw.githubusercontent.com/kmardhex/scku/main/ltp.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/kmardhex/scku/main/auto-reboot.sh"
+wget -O add-host "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-host.sh"
+wget -O about "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/about.sh"
+wget -O menu "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/menu.sh"
+wget -O usernew "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/usernew.sh"
+wget -O trial "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/trial.sh"
+wget -O hapus "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/hapus.sh"
+wget -O member "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/member.sh"
+wget -O delete "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/delete.sh"
+wget -O cek "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek.sh"
+wget -O restart "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/restart.sh"
+wget -O speedtest "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/speedtest_cli.py"
+wget -O info "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/info.sh"
+wget -O ram "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ram.sh"
+wget -O renew "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew.sh"
+wget -O autokill "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/autokill.sh"
+wget -O ceklim "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ceklim.sh"
+wget -O tendang "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/tendang.sh"
+wget -O clear-log "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/clear-log.sh"
+wget -O add-ws "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-ws.sh"
+wget -O add-vless "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-vless.sh"
+wget -O add-tr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-tr.sh"
+wget -O del-ws "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-ws.sh"
+wget -O del-vless "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-vless.sh"
+wget -O del-tr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-tr.sh"
+wget -O cek-ws "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek-ws.sh"
+wget -O cek-vless "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek-vless.sh"
+wget -O cek-tr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek-tr.sh"
+wget -O renew-ws "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-ws.sh"
+wget -O renew-vless "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-vless.sh"
+wget -O renew-tr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-tr.sh"
+wget -O certv2ray "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cert.sh"
+wget -O autobackup "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/autobackup.sh"
+wget -O backup "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/backup.sh"
+wget -O bckp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/bckp.sh"
+wget -O restore "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/restore.sh"
+wget -O strt "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/strt.sh"
+wget -O limit-speed "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/limit-speed.sh"
+wget -O add-ss "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-ss.sh"
+wget -O del-ss "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-ss.sh"
+wget -O cek-ss "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek-ss.sh"
+wget -O renew-ss "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-ss.sh"
+wget -O add-wg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-wg.sh"
+wget -O del-wg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-wg.sh"
+wget -O cek-wg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek-wg.sh"
+wget -O renew-wg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-wg.sh"
+wget -O del-non "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-non.sh"
+wget -O xp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/xp.sh"
+wget -O wss "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/wss.sh"
+wget -O renew-non "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-non.sh"
+wget -O add-wstls "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-wstls.sh"
+wget -O wgg "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/wgg.sh"
+wget -O vls "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/vls.sh"
+wget -O trj "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/trj.sh"
+wget -O tessh "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/tessh.sh"
+wget -O ssstp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ssstp.sh"
+wget -O sssr "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/sssr.sh"
+wget -O ltp "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ltp.sh"
+wget -O auto-reboot "https://github.com/MrPinguiiin/ScriptAutoInstaller/main/auto-reboot.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x del-non
@@ -130,19 +130,19 @@ chmod +x add-wg
 chmod +x del-wg
 chmod +x cek-wg
 chmod +x renew-wg
-wget -O /usr/bin/add-l2tp https://raw.githubusercontent.com/kmardhex/scku/main/add-l2tp.sh && chmod +x /usr/bin/add-l2tp
-wget -O /usr/bin/del-l2tp https://raw.githubusercontent.com/kmardhex/scku/main/del-l2tp.sh && chmod +x /usr/bin/del-l2tp
-wget -O /usr/bin/add-pptp https://raw.githubusercontent.com/kmardhex/scku/main/add-pptp.sh && chmod +x /usr/bin/add-pptp
-wget -O /usr/bin/del-pptp https://raw.githubusercontent.com/kmardhex/scku/main/del-pptp.sh && chmod +x /usr/bin/del-pptp
-wget -O /usr/bin/renew-pptp https://raw.githubusercontent.com/kmardhex/scku/main/renew-pptp.sh && chmod +x /usr/bin/renew-pptp
-wget -O /usr/bin/renew-l2tp https://raw.githubusercontent.com/kmardhex/scku/main/renew-l2tp.sh && chmod +x /usr/bin/renew-l2tp
-wget -O /usr/bin/ssr https://raw.githubusercontent.com/kmardhex/scku/main/ssrmu.sh && chmod +x /usr/bin/ssr
-wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/kmardhex/scku/main/add-ssr.sh && chmod +x /usr/bin/add-ssr
-wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/kmardhex/scku/main/del-ssr.sh && chmod +x /usr/bin/del-ssr
-wget -O /usr/bin/renew-ssr https://raw.githubusercontent.com/kmardhex/scku/main/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
-wget -O /usr/bin/add-sstp https://raw.githubusercontent.com/kmardhex/scku/main/add-sstp.sh && chmod +x /usr/bin/add-sstp
-wget -O /usr/bin/del-sstp https://raw.githubusercontent.com/kmardhex/scku/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
-wget -O /usr/bin/cek-sstp https://raw.githubusercontent.com/kmardhex/scku/main/cek-sstp.sh && chmod +x /usr/bin/cek-sstp
-wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/kmardhex/scku/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
+wget -O /usr/bin/add-l2tp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-l2tp.sh && chmod +x /usr/bin/add-l2tp
+wget -O /usr/bin/del-l2tp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-l2tp.sh && chmod +x /usr/bin/del-l2tp
+wget -O /usr/bin/add-pptp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-pptp.sh && chmod +x /usr/bin/add-pptp
+wget -O /usr/bin/del-pptp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-pptp.sh && chmod +x /usr/bin/del-pptp
+wget -O /usr/bin/renew-pptp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-pptp.sh && chmod +x /usr/bin/renew-pptp
+wget -O /usr/bin/renew-l2tp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-l2tp.sh && chmod +x /usr/bin/renew-l2tp
+wget -O /usr/bin/ssr https://github.com/MrPinguiiin/ScriptAutoInstaller/main/ssrmu.sh && chmod +x /usr/bin/ssr
+wget -O /usr/bin/add-ssr https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-ssr.sh && chmod +x /usr/bin/add-ssr
+wget -O /usr/bin/del-ssr https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-ssr.sh && chmod +x /usr/bin/del-ssr
+wget -O /usr/bin/renew-ssr https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
+wget -O /usr/bin/add-sstp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/add-sstp.sh && chmod +x /usr/bin/add-sstp
+wget -O /usr/bin/del-sstp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
+wget -O /usr/bin/cek-sstp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/cek-sstp.sh && chmod +x /usr/bin/cek-sstp
+wget -O /usr/bin/renew-sstp https://github.com/MrPinguiiin/ScriptAutoInstaller/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
 echo "Done Patch"
 rm -f patch.sh
