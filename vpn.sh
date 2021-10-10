@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# By Mardhex
+# By MrPinguiiin
 # ==================================================
 
 # initialisasi var
@@ -15,7 +15,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://github.com/kmardhex/scku/raw/main/vpn.zip
+wget https://github.com/MrPinguiiin/ScriptAutoInstaller/main/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
