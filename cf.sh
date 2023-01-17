@@ -5,11 +5,11 @@ NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 apt install jq curl -y
-DOMAIN=mdxstores.com
+DOMAIN=digvpn.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.mdxstores.com
-CF_ID=kmardhex@gmail.com
-CF_KEY=8c77dc9e05c550ad64b3fd50ed535ca399cc7
+SUB_DOMAIN=${sub}.digvpn.my.id
+CF_ID=andri.myid@gmail.com
+CF_KEY=1b2fb1e96e256e71b8b707613445dac391f8f
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
